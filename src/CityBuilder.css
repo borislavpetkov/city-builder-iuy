@@ -1,0 +1,112 @@
+@import "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css";
+@import url("https://use.fontawesome.com/releases/v5.4.2/css/all.css");
+
+.neighbourhood {
+    display: inherit;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.house {
+    max-width: 100px;
+    float: left;
+    margin: 0 20px;
+    width: 100%;
+    position: relative;
+    vertical-align: bottom;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.Orange>.floor {
+    background-color: #f19b2c;
+}
+
+.Alizarin>.floor {
+    background-color: #e54d42;
+}
+
+.Belize>.floor {
+    background-color: #2f81b7;
+}
+
+.Emerald>.floor {
+    background-color: #39ca74;
+}
+
+.house-details {
+    position: absolute;
+    width: 200px;
+    top: 0;
+    left: 0;
+    opacity:0;
+    background-color: #fff;
+    border-radius: 3px;
+    border: 1px solid #3333334a;
+    padding: 10px;
+    z-index: 9999;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition-property: all;
+	transition-property: all;
+	-webkit-transition-duration: .5s;
+	transition-duration: .5s;	
+	-webkit-box-shadow: -3px 14px 21px 7px rgba(0,0,0,0.23);
+	-moz-box-shadow: -3px 14px 21px 7px rgba(0,0,0,0.23);
+	box-shadow: -3px 14px 21px 7px rgba(0,0,0,0.23);}
+
+.house:hover>.house-details {
+    opacity:1;
+}
+
+.roof {
+    margin: 0 auto;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid red;
+}
+
+.floor {
+    min-height: 40px;
+    display: flex;
+    position: relative;
+}
+
+.floor span {
+    width: 100%;
+    height: 30px;
+    float: left;
+    border: 1px solid #000;
+    display: block;
+    margin: 10px;
+    background-color: #fff;
+}
+
+.floor:last-child>span:first-child {
+    margin: 10px 10px 10px 10px;
+}
+
+.floor:last-child>span:last-child {
+    background-color: #fff0;
+    border: 0px;
+    position: relative;
+}
+
+.floor:last-child>span:last-child::before {
+    content: "";
+    background-color: #fff;
+    position: absolute;
+    border: 2px solid #000;
+    width: 30px;
+    height: 40px;
+}
+
+.bg-primary {color: #fff;}
+
+.hover {cursor:pointer;}
+
+th {width:20%;}
